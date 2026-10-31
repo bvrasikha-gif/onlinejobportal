@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Job<span>Finder</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h1>Find Your Dream Job Today!</h1>
+        <p>Explore thousands of job opportunities and build your career.</p>
+
+        <div class="search-box">
+            <input type="text" id="jobSearch"
+                placeholder="Enter job title...">
+
+            <input type="text" id="locationSearch"
+                placeholder="Enter location...">
+
+            <button onclick="searchJobs()">Search Jobs</button>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs-section" id="jobs">
+        <h2>Latest Job Opportunities</h2>
+        <p class="subtitle">Find the right job for your skills</p>
+
+        <div class="job-container" id="jobContainer">
+
+            <div class="job-card">
+                <h3>Web Developer</h3>
+                <p><b>Company:</b> ABC Technologies</p>
+                <p><b>Location:</b> Chennai</p>
+                <p><b>Salary:</b> ₹25,000 - ₹40,000</p>
+                <p><b>Type:</b> Full Time</p>
+                <button onclick="applyJob('Web Developer')">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p><b>Company:</b> Tech Solutions</p>
+                <p><b>Location:</b> Bangalore</p>
+                <p><b>Salary:</b> ₹30,000 - ₹50,000</p>
+                <p><b>Type:</b> Full Time</p>
+                <button onclick="applyJob('Software Engineer')">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p><b>Company:</b> Creative Studio</p>
+                <p><b>Location:</b> Coimbatore</p>
+                <p><b>Salary:</b> ₹20,000 - ₹35,000</p>
+                <p><b>Type:</b> Part Time</p>
+                <button onclick="applyJob('UI/UX Designer')">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p><b>Company:</b> Data World</p>
+                <p><b>Location:</b> Chennai</p>
+                <p><b>Salary:</b> ₹25,000 - ₹45,000</p>
+                <p><b>Type:</b> Full Time</p>
+                <button onclick="applyJob('Data Analyst')">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h3>Digital Marketing Executive</h3>
+                <p><b>Company:</b> Media Works</p>
+                <p><b>Location:</b> Madurai</p>
+                <p><b>Salary:</b> ₹18,000 - ₹30,000</p>
+                <p><b>Type:</b> Full Time</p>
+                <button onclick="applyJob('Digital Marketing Executive')">
+                    Apply Now
+                </button>
+            </div>
+
+            <div class="job-card">
+                <h3>Python Developer</h3>
+                <p><b>Company:</b> Smart Systems</p>
+                <p><b>Location:</b> Trichy</p>
+                <p><b>Salary:</b> ₹28,000 - ₹45,000</p>
+                <p><b>Type:</b> Full Time</p>
+                <button onclick="applyJob('Python Developer')">
+                    Apply Now
+                </button>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            No jobs found. Try another search.
+        </p>
+    </section>
+
+    <!-- Application Section -->
+    <section class="application-section" id="application">
+        <h2>Job Application Form</h2>
+
+        <form id="applicationForm">
+            <input type="text" id="applicantName"
+                placeholder="Enter Your Name" required>
+
+            <input type="email" id="applicantEmail"
+                placeholder="Enter Your Email" required>
+
+            <input type="text" id="selectedJob"
+                placeholder="Job Position" required>
+
+            <input type="tel" id="applicantPhone"
+                placeholder="Enter Phone Number" required>
+
+            <textarea id="applicantMessage"
+                placeholder="Tell us about your skills"
+                required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <p>
+            JobFinder is an online job portal designed to connect
+            job seekers with employers. Our platform helps candidates
+            discover job opportunities and build successful careers.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@jobfinder.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Tamil Nadu, India</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 JobFinder. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
